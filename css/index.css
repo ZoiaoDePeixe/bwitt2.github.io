@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Venti-Bold;
+    src: url("../fonts/Venti/VentiCF-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Venti-Medium;
+    src: url("../fonts/Venti/VentiCF-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Venti-Bold-Obl;
+    src: url("../fonts/Venti/VentiCF-BoldOblique.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Venti-Thin;
+    src: url("../fonts/Venti/VentiCF-Thin.otf") format("opentype");
+}
+
+body{
+    background-color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#head{
+    margin-top: 40px;
+}
+
+#head #name{
+    font-family: 'Venti-Bold';
+    font-size: 25px;
+    color: #424242;
+}
+
+#head #slash{
+    font-family: 'Venti-Medium';
+    font-size: 30px;
+    color: #FDD835;
+}
+
+#head #description{
+    font-family: 'Venti-Medium';
+    font-size: 25px;
+    color: #424242;
+    float: right;
+}
+
+#main-list{
+    margin-top: 160px;
+    color: #424242;
+}
+
+#main-list-head{
+    font-family: 'Venti-Bold';
+    font-size: 65px;
+}
+
+.main-list-item{
+    font-family: 'Venti-Medium';
+    font-size: 20px;
+    margin-bottom: -1px;
+}
+
+#seperator{
+    background-color: #FDD835;
+    border-radius: 2px;
+    margin-top: -23px;
+    width: 90%;
+    height: 8px;
+    float: left;
+}
+
+#about{
+    margin-top: 150px;
+    font-family: 'Venti-Bold-Obl';
+    font-size: 25px;
+    color: #424242;
+}
