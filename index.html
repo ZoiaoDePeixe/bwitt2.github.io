@@ -6,22 +6,28 @@
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/index.css">
 
-        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-        <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+
+        <title>BRANDON WITT</title>
+
     </head>
 	<body>
 		<div class="container">
-            
+            <!-- MAIN PAGE -->
             <div class="row">
-                <div class="twelve columns" id="head">
+                <div class="one-half columns" id="head">
                     <span id="name"> BRANDON WITT </span> <span id="description"> PRODUCT DEVELOPER </span>
                 </div>
+                <!--div class="one-half columns" id="head">
+                    <a href="#who">WHO</a> / <a href="#what">WHAT</a>
+                </div-->
             </div>
 
             <div class="row" id="main-list">
                 <div class="twelve columns">
                     <ul>
-                        <li id="main-list-head"> LET'S DO IT IN STYLE . . . </li>
+                        <li id="main-list-head"> LET'S DO IT IN <span class="obl">STYLE</span> . . . </li>
                         <!--
                             Let's get down to business.
                             We've got work to do.
@@ -35,23 +41,81 @@
                 </div>
             </div>
 
-            <div class="row" id="about">
+            <!-- ABOUT ME -->
+
+            <div class="row" id="who" name="who">
                 <div class="twelve column">
                     HERE'S WHO I AM
                 </div>
             </div>
 
-            <div class="row" id="about">
-                <div class="twelve column">
-                    HERE'S WHY I DO WHAT I DO
+            <div class="row">
+                <div class="one-half column blurb">
+                    <p>
+                        I love to learn. I love to make. I love to cycle 🚴. 
+                    </p>
+
+                    <p>
+                        I am a Software Engineering student at Western University. 
+                    </p>
+                    <p>
+                        I'm an ethusiastic creative with a passion for challenging the complexity of problems with elegant solutions; from back-end to front-end.
+                    </p>
+
+                    <p>
+                        Life shouldn't be lived infront of a computer. We need to get out there; build, play, and explore. We need to make products that make people smile and adventure. My computer is not who I am, it is merely what I am good at, and it is my tool to inspire change.
+                    </p>
+                </div>
+                <div class="one-half column image">
+                        <img src="images/me.jpg" width="300"><br>
+                        <img src="images/sig.jpg" width="300">
                 </div>
             </div>
 
-            <div class="row" id="about">
+            <!-- PROJECTS -->
+
+            <div class="row" id="what" name="what">
                 <div class="twelve column">
-                    HERE'S WHAT I DO
+                    HERE'S SOME OF MY WORK! (CLICK IT)
                 </div>
             </div>
+
+            <div class="row project-tile" id="rfid">
+                <div class="twelve column title">RFID ID & MEDICALERT BRACELET</div>
+                <div class="twelve column description hidden">blurb</div>
+            </div>
+
+            <div class="row project-tile">
+                <div class="twelve column">CRYPTOCURRENCY ARBITRAGE</div>
+            </div>
+
+            <div class="row project-tile">
+                <div class="twelve column">NETWORKED COLLABORATIVE CROSSWORD</div>
+            </div>
+
+            <a href="https://github.com/bwitt2/Sift-Backend">
+                <div class="row project-tile">
+                    <div class="twelve column">SIFT</div>
+                </div>
+            </a>
+
+            <a href="http://smplstudios.com/">
+                <div class="row project-tile">
+                    <div class="twelve column">SMPL STUDIOS</div>
+                </div>
+            </a>
+
         </div>
+        <!--script>
+            $(".project-tile").each(function(index, project){
+                $(this).mouseenter(function() {
+                    $(this).find(".title").addClass("hidden");
+                    $(this).find(".description").removeClass("hidden");
+                }).mouseleave(function(){
+                    $(this).find(".title").removeClass("hidden");
+                    $(this).find(".description").addClass("hidden");
+                });
+            });
+        </script-->
 	</body>
 </html>

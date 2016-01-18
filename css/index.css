@@ -1,3 +1,6 @@
+
+/* FONT DEFINITIONS */
+
 @font-face {
     font-family: Venti-Bold;
     src: url("../fonts/Venti/VentiCF-Bold.otf") format("opentype");
@@ -18,8 +21,11 @@
     src: url("../fonts/Venti/VentiCF-Thin.otf") format("opentype");
 }
 
+/* STYLE */
+
 body{
     background-color: white;
+    margin-bottom: 70px;
 }
 
 ul{
@@ -50,13 +56,13 @@ ul{
 }
 
 #main-list{
-    margin-top: 160px;
+    margin-top: 200px;
     color: #424242;
 }
 
 #main-list-head{
     font-family: 'Venti-Bold';
-    font-size: 65px;
+    font-size: 70px;
 }
 
 .main-list-item{
@@ -74,9 +80,90 @@ ul{
     float: left;
 }
 
-#about{
+#who{
+    text-align: center;
     margin-top: 150px;
-    font-family: 'Venti-Bold-Obl';
+    margin-bottom: 50px;
+    font-family: 'Venti-Bold';
     font-size: 25px;
     color: #424242;
+}
+
+.blurb{
+    font-family: 'Venti-Medium';
+    font-size:20px;
+    padding-left: 60px;
+    /*padding-right: 20px;*/
+}
+
+.image{
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+#what{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-family: 'Venti-Bold';
+    font-size: 25px;
+    color: #424242;
+}
+
+.obl{
+    font-family: 'Venti-Bold-Obl'
+}
+
+.project-tile{
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #FDD835;
+
+    text-align: center;
+
+    height: 100px;
+
+    background-color: #FDD835;
+
+    font-family: 'Venti-Medium';
+    font-size: 25px;
+    color: #424242;
+    padding-top: 70px;
+}
+
+.project-tile:hover{
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #FDD835;
+
+    text-align: center;
+
+    height: 100px;
+
+    background-color: white;
+
+    font-family: 'Venti-Medium';
+    font-size: 25px;
+    color: #424242;
+    padding-top: 70px;
+}
+
+#contact{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-family: 'Venti-Bold';
+    font-size: 25px;
+    color: #424242;
+}
+
+.message{
+    font-family: 'Venti-Medium';
+    font-size:20px;
+}
+
+.hidden{
+    display: none;
 }
